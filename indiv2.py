@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # _*_ coding: utf-8 _*_
 
+
 class String:
     """
     Класс String по примеру реализации класса из TurboPascal
     """
+
     MAX_SIZE = 255  # Максимальное количество символов в строке
 
     def __init__(self, string):
@@ -130,7 +132,7 @@ class String:
         return self.data[item]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = String("Уланбекова")
     print(s)
     print(s.size())

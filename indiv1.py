@@ -3,6 +3,7 @@
 
 import math
 
+
 class Pair:
     """
     Класс, хранящий введенные числа k и n в полях first и second
@@ -40,7 +41,9 @@ class Pair:
         """
         Метод высчитывает значения по формуле, с использованием переданных в конструкторе значений
         """
-        return math.factorial(self.second) / (math.factorial(self.second - self.first) * math.factorial(self.first))
+        return math.factorial(self.second) / (
+            math.factorial(self.second - self.first) * math.factorial(self.first)
+        )
 
     def display(self):
         """
@@ -100,7 +103,7 @@ def make_pair(first, second):
     return Pair(first, second)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Создаем 2 экземпляра класса Pair
     pair1 = Pair(5, 10)
     pair2 = Pair(6, 15)
